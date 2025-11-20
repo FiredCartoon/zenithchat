@@ -9,7 +9,8 @@ class GeminiService {
   private chatSession: Chat | null = null;
 
   constructor() {
-    const apiKey = process.env.API_KEY;
+    const apiKey = "AIzaSyAl_cmDSpxU8BqZ0lODSBVu-KwshSJPehE";
+
     if (!apiKey) {
       console.error("API Key not found in environment variables");
     }
