@@ -9,8 +9,7 @@ class GeminiService {
   private chatSession: Chat | null = null;
 
   constructor() {
-    const apiKey = "AIzaSyAl_cmDSpxU8BqZ0lODSBVu-KwshSJPehE";
-
+    const apiKey = import.meta.env.VITE_API_KEY;
     if (!apiKey) {
       console.error("API Key not found in environment variables");
     }
