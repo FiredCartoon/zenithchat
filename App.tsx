@@ -98,20 +98,20 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-white font-sans">
+    <div className="flex flex-col h-screen bg-white dark:bg-neutral-900 font-sans">
       <Header onNewChat={handleNewChat} />
       
       <main className="flex-1 overflow-y-auto pt-20 pb-40">
         <div className="max-w-3xl mx-auto px-4">
           {messages.length === 0 && (
             <div className="flex flex-col items-center justify-center h-[60vh] text-center space-y-6 animate-fade-in opacity-0 [animation-fill-mode:forwards] [animation-duration:1s]">
-              <div className="w-16 h-16 bg-neutral-900 rounded-2xl flex items-center justify-center shadow-2xl mb-4">
-                 <div className="w-8 h-8 border-2 border-white rounded-full" />
+              <div className="w-16 h-16 bg-neutral-900 dark:bg-white rounded-2xl flex items-center justify-center shadow-2xl mb-4">
+                 <div className="w-8 h-8 border-2 border-white dark:border-neutral-900 rounded-full" />
               </div>
-              <h1 className="text-4xl font-medium tracking-tight text-neutral-900">
+              <h1 className="text-4xl font-medium tracking-tight text-neutral-900 dark:text-white">
                 How can I help?
               </h1>
-              <p className="text-neutral-500 max-w-md text-lg font-light">
+              <p className="text-neutral-500 dark:text-neutral-400 max-w-md text-lg font-light">
                 I'm ready to assist you with questions, ideas, or tasks.
               </p>
             </div>
